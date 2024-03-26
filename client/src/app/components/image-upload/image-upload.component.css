@@ -1,0 +1,15 @@
+label{
+  background-color: #337ab7;
+  text-align: center;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#profileImage {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center top;
+}

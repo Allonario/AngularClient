@@ -1,0 +1,42 @@
+app-image-upload{
+  width: 200px;
+}
+
+app-nav-bar{
+  width: 50%;
+}
+
+#mainContainer{
+  margin: 30px;
+}
+
+#header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+#navWithLogo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+}
+
+#logOut{
+  margin-right: 20px;
+}
+
+#imageContainer{
+  display: flex;
+  width: 200px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+#logOutSection{
+  margin-right: 20px;
+}

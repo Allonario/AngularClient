@@ -1,0 +1,10 @@
+#navBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a{
+  margin-inline: 5px;
+}
+

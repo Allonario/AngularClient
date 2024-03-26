@@ -1,0 +1,24 @@
+<div id="body">
+  <div id="container">
+    <h1>РЕГИСТРАЦИЯ</h1>
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label>Почта:</label>
+        <input type="text" id="username" formControlName="username">
+      </div>
+      <div>
+        <label>Пароль:</label>
+        <input type="text" id="password" formControlName="password">
+      </div>
+      <div>
+        <label>Имя:</label>
+        <input type="text" id="name" formControlName="name">
+      </div>
+      <div>
+        <label>Дата:</label>
+        <input type="date" id="date" formControlName="date">
+      </div>
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+</div>

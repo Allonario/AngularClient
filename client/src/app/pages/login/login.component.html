@@ -1,0 +1,11 @@
+<div id="body">
+  <div id="container">
+    <h1>ВХОД</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <input type="text" id="username" formControlName="username" placeholder="Введите логин">
+      <input type="password" id="password" formControlName="password" placeholder="Введите пароль">
+      <button type="submit">Войти</button>
+    </form>
+    <a href="/registration">Зарегистрироваться</a>
+  </div>
+</div>

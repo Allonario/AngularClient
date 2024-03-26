@@ -1,0 +1,45 @@
+app-nav-bar{
+  width: 50%;
+}
+
+p{
+  overflow-wrap: break-word;
+}
+
+span{
+  margin-left: 10px;
+}
+
+
+#header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+#navWithLogo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+}
+
+#logOut{
+  margin-right: 20px;
+}
+
+#mainContainer {
+  margin-top: 20px;
+  margin-inline: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#newsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-left: 50px;
+}

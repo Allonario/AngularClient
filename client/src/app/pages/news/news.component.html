@@ -1,0 +1,19 @@
+<div id="header">
+  <div id="navWithLogo">
+    <img src="assets/img/logo_transparent_c.png" alt="logo" height="100" width="100">
+    <app-nav-bar></app-nav-bar>
+  </div>
+  <a id="logOut" href="/login">Выйти</a>
+</div>
+<div id="mainContainer">
+  <app-news-modal></app-news-modal>
+  <div id="newsContainer">
+    <div *ngFor="let newsItem of newsList">
+      <div>
+        <strong>{{ newsItem[1] }}</strong>
+        <span>{{ newsItem[0].date }}</span>
+      </div>
+      <p>{{ newsItem[0].text }}</p>
+    </div>
+  </div>
+</div>

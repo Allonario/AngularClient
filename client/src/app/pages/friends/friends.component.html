@@ -1,0 +1,32 @@
+<div id="header">
+  <div id="navWithLogo">
+    <img src="assets/img/logo_transparent_c.png" alt="logo" height="100" width="100">
+    <app-nav-bar></app-nav-bar>
+  </div>
+  <a id="logOut" href="/login">Выйти</a>
+</div>
+<div id="mainContainer">
+  <input type="text"
+        placeholder="Поиск людей"
+        [(ngModel)]="searchingName">
+  <div id="usersContainer">
+    <div *ngIf="getFilteredUsers()">
+      <div *ngFor="let userKey of getFilteredUsers()">
+        <div class="user">
+          <img class="userImg" [src]="users[userKey].photo ? 'assets' + users[userKey].photo : 'assets/img/logo.png'" alt="Фото {{ users[userKey].name }}"/>
+          <div class="userInfo">
+            <h3>{{ users[userKey].name }}</h3>
+            <p>Email: {{ users[userKey].email }}</p>
+            <p>Дата рождения: {{ users[userKey].birthDate }}</p>
+          </div>
+        </div>
+        <div *ngIf="!this.friendsId.includes(userKey+1); else deleteFriendBlock">
+          <button class="addFriend" (click)="addFriend(userKey+1)">Добавить в друзья</button>
+        </div>
+        <ng-template #deleteFriendBlock>
+          <button class='deleteFriend' (click)="deleteFriend(userKey+1)">Удалить из друзей</button>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

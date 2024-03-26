@@ -1,0 +1,27 @@
+<div id="header">
+  <div id="navWithLogo">
+    <img src="assets/img/logo_transparent_c.png" alt="logo" height="100" width="100">
+    <app-nav-bar></app-nav-bar>
+  </div>
+  <div id="logOutSection">
+    <div *ngIf="isAdmin">
+      <a href="https://localhost:3000/admin" target="_blank">Перейти в раздел администрации</a>
+    </div>
+    <a id="logOut" href="/login">Выйти</a>
+  </div>
+</div>
+<div id="mainContainer">
+  <div *ngIf="isLoading else content">
+    Loading...
+  </div>
+  <ng-template #content>
+    <div *ngIf="user">
+      <div id="imageContainer">
+        <app-image-upload></app-image-upload>
+      </div>
+      <h2><strong>{{ user.name }}</strong></h2>
+        <p>Email: {{ user.email }}</p>
+        <p>Birth Date: {{ user.birthDate }}</p>
+    </div>
+  </ng-template>
+</div>

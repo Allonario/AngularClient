@@ -1,0 +1,80 @@
+app-nav-bar{
+  width: 50%;
+}
+
+input{
+  padding-inline: 5px;
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+hr{
+  box-shadow: black;
+}
+
+#header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+#navWithLogo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+}
+
+#logOut{
+  margin-right: 20px;
+}
+
+.userImg{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center top;;
+}
+
+#mainContainer{
+  margin-top: 20px;
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#usersContainer{
+  margin-top: 20px;
+  width: 400px;
+  border: 1px solid black;
+}
+
+.user{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.userInfo{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.addFriend{
+  padding: 5px;
+  background-color: mediumspringgreen;
+  border-radius: 3px;
+}
+
+.deleteFriend{
+  padding: 5px;
+  background-color: crimson;
+  border-radius: 3px;
+}
